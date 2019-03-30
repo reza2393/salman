@@ -1,0 +1,190 @@
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
+[Service PPTP]
+Encoding=1
+PBVersion=4
+Type=2
+AutoLogon=0
+UseRasCredentials=1
+LowDateTime=-1778317008
+HighDateTime=30729597
+DialParamsUID=878939968
+Guid=ACFA3187CD80C649B76DD3E0B965680F
+VpnStrategy=1
+ExcludedProtocols=0
+LcpExtensions=1
+DataEncryption=8
+SwCompression=0
+NegotiateMultilinkAlways=0
+SkipDoubleDialDialog=0
+DialMode=0
+OverridePref=15
+RedialAttempts=3
+RedialSeconds=60
+IdleDisconnectSeconds=0
+RedialOnLinkFailure=1
+CallbackMode=0
+CustomDialDll=
+CustomDialFunc=
+CustomRasDialDll=
+ForceSecureCompartment=0
+DisableIKENameEkuCheck=0
+AuthenticateServer=0
+ShareMsFilePrint=1
+BindMsNetClient=1
+SharedPhoneNumbers=0
+GlobalDeviceSettings=0
+PrerequisiteEntry=
+PrerequisitePbk=
+PreferredPort=VPN4-0
+PreferredDevice=WAN Miniport (PPTP)
+PreferredBps=0
+PreferredHwFlow=1
+PreferredProtocol=1
+PreferredCompression=1
+PreferredSpeaker=1
+PreferredMdmProtocol=0
+PreviewUserPw=1
+PreviewDomain=1
+PreviewPhoneNumber=0
+ShowDialingProgress=1
+ShowMonitorIconInTaskBar=1
+CustomAuthKey=0
+AuthRestrictions=520
+IpPrioritizeRemote=1
+IpInterfaceMetric=0
+IpHeaderCompression=0
+IpAddress=0.0.0.0
+IpDnsAddress=0.0.0.0
+IpDns2Address=0.0.0.0
+IpWinsAddress=0.0.0.0
+IpWins2Address=0.0.0.0
+IpAssign=1
+IpNameAssign=1
+IpDnsFlags=0
+IpNBTFlags=1
+TcpWindowSize=0
+UseFlags=2
+IpSecFlags=0
+IpDnsSuffix=
+Ipv6Assign=1
+Ipv6Address=::
+Ipv6PrefixLength=0
+Ipv6PrioritizeRemote=1
+Ipv6InterfaceMetric=0
+Ipv6NameAssign=1
+Ipv6DnsAddress=::
+Ipv6Dns2Address=::
+Ipv6Prefix=0000000000000000
+Ipv6InterfaceId=9426EC329BFEA7C1
+DisableClassBasedDefaultRoute=0
+DisableMobility=0
+NetworkOutageTime=0
+IDI=
+IDR=
+ImsConfig=0
+IdiType=0
+IdrType=0
+ProvisionType=0
+PreSharedKey=
+CacheCredentials=1
+NumCustomPolicy=0
+NumEku=0
+UseMachineRootCert=0
+NumServers=0
+RouteVersion=1
+NumRoutes=0
+NumNrptRules=0
+AutoTiggerCapable=0
+NumAppIds=0
+NumClassicAppIds=0
+SecurityDescriptor=
+ApnInfoProviderId=
+ApnInfoUsername=
+ApnInfoPassword=
+ApnInfoAccessPoint=
+ApnInfoAuthentication=1
+ApnInfoCompression=0
+DeviceComplianceEnabled=0
+DeviceComplianceSsoEnabled=0
+DeviceComplianceSsoEku=
+DeviceComplianceSsoIssuer=
+FlagsSet=0
+Options=0
+DisableDefaultDnsSuffixes=0
+NumTrustedNetworks=0
+NumDnsSearchSuffixes=0
+PowershellCreatedProfile=0
+ProxyFlags=0
+ProxySettingsModified=0
+ProvisioningAuthority=
+AuthTypeOTP=0
+GREKeyDefined=0
+NumPerAppTrafficFilters=0
+AlwaysOnCapable=0
+DeviceTunnel=0
+PrivateNetwork=0
+
+NETCOMPONENTS=
+ms_msclient=1
+ms_server=1
+
+MEDIA=rastapi
+Port=VPN4-0
+Device=WAN Miniport (PPTP)
+
+DEVICE=vpn
+PhoneNumber=pptp.fadns.biz
+AreaCode=
+CountryCode=0
+CountryID=0
+UseDialingRules=0
+Comment=
+FriendlyName=
+LastSelectedPhone=0
+PromoteAlternates=0
+TryNextAlternateOnFail=1
+
